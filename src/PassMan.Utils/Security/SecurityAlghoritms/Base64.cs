@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PassMan.Utils.Security.SecurityAlghoritms
 {
-    public class Base64 
+    public class Base64 : ISecurityAlghoritm
     {
         public string Decrypt(string textToEncode)
         {

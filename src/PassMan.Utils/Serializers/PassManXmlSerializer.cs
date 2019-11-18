@@ -8,9 +8,9 @@ using System.Xml.Serialization;
 
 namespace PassMan.Utils.Serializers
 {
-    public class PassManXmlSerializer
+    public class PassManXmlSerializer: ISerializer
     {
-        public static string Serialize(object obj)
+        public string Serialize(object obj)
         {
             using (var stringWriter = new StringWriter())
             {
@@ -20,7 +20,7 @@ namespace PassMan.Utils.Serializers
             }
         }
 
-        public static TObject Deserialize<TObject>(string xml)
+        public TObject Deserialize<TObject>(string xml)
         {
             using (var stringReader = new StringReader(xml))
             {
