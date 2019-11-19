@@ -6,7 +6,7 @@ namespace PassMan.Utils.Security
 {
     interface ISecurityAlghoritm
     {
-        string Encrypt(string textToEncode);
-        string Decrypt(string encodedText);
+        string Encrypt(string key, string textToEncode);
+        string Decrypt(string key, string encodedText);
     }
 }
