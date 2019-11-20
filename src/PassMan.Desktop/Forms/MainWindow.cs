@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PassMan.Desktop.Controls;
+using PassMan.Utils.Models.PassEntry;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,26 @@ namespace PassMan.Desktop.Forms
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void AddEntryControlToPanel(PassEntry passEntry)
+        {
+            EntryDisplayControl c = new EntryDisplayControl(passEntry);
+            flpEntriesSet.Controls.Add(c);
+            c.Dock = DockStyle.Top;
+            c.Show();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            AddNewEntryWindow addNewEntryWindow = new AddNewEntryWindow();
+            if (addNewEntryWindow.ShowDialog() == DialogResult.OK)
+                AddEntryControlToPanel(addNewEntryWindow.Result);
         }
     }
 }

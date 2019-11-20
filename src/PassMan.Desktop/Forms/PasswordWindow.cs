@@ -16,5 +16,13 @@ namespace PassMan.Desktop.Forms
         {
             InitializeComponent();
         }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.ShowDialog();
+            this.Hide();
+            Close();
+        }
     }
 }

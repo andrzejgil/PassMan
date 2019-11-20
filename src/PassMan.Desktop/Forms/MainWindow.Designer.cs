@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.msMenu = new System.Windows.Forms.MenuStrip();
             this.tsmiFile = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiNew = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,11 +38,11 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.trvGroups = new System.Windows.Forms.TreeView();
             this.tsTools = new System.Windows.Forms.ToolStrip();
-            this.btnAdd = new System.Windows.Forms.ToolStripButton();
-            this.flpEntriesSet = new System.Windows.Forms.FlowLayoutPanel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tslblSearch = new System.Windows.Forms.ToolStripLabel();
             this.tstbSearch = new System.Windows.Forms.ToolStripTextBox();
+            this.flpEntriesSet = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnAdd = new System.Windows.Forms.ToolStripButton();
             this.msMenu.SuspendLayout();
             this.tsTools.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +53,7 @@
             this.tsmiFile});
             this.msMenu.Location = new System.Drawing.Point(0, 0);
             this.msMenu.Name = "msMenu";
-            this.msMenu.Size = new System.Drawing.Size(625, 24);
+            this.msMenu.Size = new System.Drawing.Size(747, 24);
             this.msMenu.TabIndex = 0;
             this.msMenu.Text = "menuStrip1";
             // 
@@ -74,37 +73,37 @@
             this.tsmiNew.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiNewGroup});
             this.tsmiNew.Name = "tsmiNew";
-            this.tsmiNew.Size = new System.Drawing.Size(180, 22);
+            this.tsmiNew.Size = new System.Drawing.Size(98, 22);
             this.tsmiNew.Text = "New";
             // 
             // tsmiNewGroup
             // 
             this.tsmiNewGroup.Name = "tsmiNewGroup";
-            this.tsmiNewGroup.Size = new System.Drawing.Size(180, 22);
+            this.tsmiNewGroup.Size = new System.Drawing.Size(107, 22);
             this.tsmiNewGroup.Text = "Group";
             // 
             // tsmiSave
             // 
             this.tsmiSave.Name = "tsmiSave";
-            this.tsmiSave.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSave.Size = new System.Drawing.Size(98, 22);
             this.tsmiSave.Text = "Save";
             // 
             // tsSeparator
             // 
             this.tsSeparator.Name = "tsSeparator";
-            this.tsSeparator.Size = new System.Drawing.Size(177, 6);
+            this.tsSeparator.Size = new System.Drawing.Size(95, 6);
             // 
             // tsmiExit
             // 
             this.tsmiExit.Name = "tsmiExit";
-            this.tsmiExit.Size = new System.Drawing.Size(180, 22);
+            this.tsmiExit.Size = new System.Drawing.Size(98, 22);
             this.tsmiExit.Text = "Exit";
             // 
             // statusStrip1
             // 
             this.statusStrip1.Location = new System.Drawing.Point(0, 441);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(625, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(747, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -125,58 +124,62 @@
             this.tstbSearch});
             this.tsTools.Location = new System.Drawing.Point(144, 24);
             this.tsTools.Name = "tsTools";
-            this.tsTools.Size = new System.Drawing.Size(481, 25);
+            this.tsTools.Size = new System.Drawing.Size(603, 38);
             this.tsTools.TabIndex = 3;
             this.tsTools.Text = "toolStrip1";
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
-            this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(23, 22);
-            this.btnAdd.Text = "toolStripButton1";
-            // 
-            // flpEntriesSet
-            // 
-            this.flpEntriesSet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpEntriesSet.Location = new System.Drawing.Point(144, 49);
-            this.flpEntriesSet.Name = "flpEntriesSet";
-            this.flpEntriesSet.Size = new System.Drawing.Size(481, 392);
-            this.flpEntriesSet.TabIndex = 4;
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
             // 
             // tslblSearch
             // 
             this.tslblSearch.Name = "tslblSearch";
-            this.tslblSearch.Size = new System.Drawing.Size(75, 22);
+            this.tslblSearch.Size = new System.Drawing.Size(75, 35);
             this.tslblSearch.Text = "Search Entry:";
             // 
             // tstbSearch
             // 
             this.tstbSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tstbSearch.Name = "tstbSearch";
-            this.tstbSearch.Size = new System.Drawing.Size(100, 25);
+            this.tstbSearch.Size = new System.Drawing.Size(100, 38);
+            // 
+            // flpEntriesSet
+            // 
+            this.flpEntriesSet.AutoScroll = true;
+            this.flpEntriesSet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpEntriesSet.Location = new System.Drawing.Point(144, 62);
+            this.flpEntriesSet.Name = "flpEntriesSet";
+            this.flpEntriesSet.Size = new System.Drawing.Size(603, 379);
+            this.flpEntriesSet.TabIndex = 4;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Image = global::PassMan.Desktop.Properties.Resources.Add;
+            this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(63, 35);
+            this.btnAdd.Text = "Add entry";
+            this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 463);
+            this.ClientSize = new System.Drawing.Size(747, 463);
             this.Controls.Add(this.flpEntriesSet);
             this.Controls.Add(this.tsTools);
             this.Controls.Add(this.trvGroups);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.msMenu);
             this.MainMenuStrip = this.msMenu;
+            this.MinimumSize = new System.Drawing.Size(763, 502);
             this.Name = "MainWindow";
             this.ShowIcon = false;
             this.Text = "PassMan";
+            this.Load += new System.EventHandler(this.MainWindow_Load);
             this.msMenu.ResumeLayout(false);
             this.msMenu.PerformLayout();
             this.tsTools.ResumeLayout(false);
